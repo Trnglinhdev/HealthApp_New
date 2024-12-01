@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Display selected month and year -->
+    <TextView
+        android:id="@+id/monthYearText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/material_dynamic_primary90"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/selectDate"
+        android:textSize="24sp" />
+
+    <!-- Calendar view for selecting a date -->
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:firstDayOfWeek="1"
+        android:minDate="01/01/2020"
+        android:maxDate="12/31/2030"
+        android:dateTextAppearance="?android:attr/textAppearanceMedium" />
+
+    <!-- List of appointments for the selected date -->
+    <TextView
+        android:id="@+id/appointmentsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Appointments"
+        android:textSize="20sp"
+        android:padding="8dp" />
+
+    <!-- RecyclerView to display appointments for the selected date -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/appointmentsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" />
+</LinearLayout>

@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/jokeImageView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="49dp"
+        android:layout_height="54dp"
+        android:contentDescription="@string/descriptionHome"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.013"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001"
+        app:srcCompat="@drawable/home" />
+
+    <TextView
+
+        android:id="@+id/addTv"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="@string/addTv"
+
+        android:textAlignment="center"
+
+        android:textSize="38sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.496"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.064" />
+
+
+    <TextView
+
+        android:id="@+id/addFNameTv"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="@string/addFNameTv"
+
+        android:textAlignment="textEnd"
+
+        android:textSize="20sp"
+
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.137"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.186"
+
+        tools:ignore="DuplicateIds" />
+
+    <EditText
+
+        android:id="@+id/userAddFName"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+
+        android:hint="@string/userAddFName"
+
+        android:inputType="text"
+
+        android:textAlignment="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.81"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.179" />
+
+
+    <EditText
+
+        android:id="@+id/userAddBd"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+
+        android:hint="@string/userAddBd"
+
+        android:inputType="text"
+
+        android:textAlignment="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.81"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.346" />
+
+
+    <TextView
+
+        android:id="@+id/addBdTv"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="@string/addBdTv"
+
+        android:textAlignment="textEnd"
+
+        android:textSize="20sp"
+
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.083"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.348" />
+
+    <EditText
+
+        android:id="@+id/userAddPhone"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+
+        android:hint="@string/userAddPhone"
+
+        android:inputType="text"
+
+        android:textAlignment="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.81"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+
+    <TextView
+
+        android:id="@+id/addPhoneTv"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="@string/addPhoneTv"
+
+        android:textAlignment="textEnd"
+
+        android:textSize="20sp"
+
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.018"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+
+    <EditText
+
+        android:id="@+id/userAddEContact"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+
+        android:hint="@string/userAddEContact"
+
+        android:inputType="text"
+
+        android:textAlignment="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.81"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.693" />
+
+    <TextView
+
+        android:id="@+id/addEContact"
+
+        android:layout_width="125dp"
+
+        android:layout_height="59dp"
+
+        android:text="@string/addEContact"
+
+        android:textAlignment="textEnd"
+
+        android:textSize="20sp"
+
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.069"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.688" />
+
+    <EditText
+
+        android:id="@+id/userAddEmail"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+
+        android:hint="@string/userAddEmail"
+
+        android:inputType="text"
+
+        android:textAlignment="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.81"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.59"
+
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <TextView
+
+        android:id="@+id/addEmailTv"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="@string/addEmailTv"
+
+        android:textAlignment="center"
+
+        android:textSize="20sp"
+
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.227"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.586" />
+
+    <TextView
+
+        android:id="@+id/addLNameTv"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="@string/addLNameTv"
+
+        android:textAlignment="textEnd"
+
+        android:textSize="20sp"
+
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.129"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.269" />
+
+    <EditText
+
+        android:id="@+id/userAddLName"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+
+        android:hint="@string/userAddLName"
+
+        android:inputType="text"
+
+        android:textAlignment="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.81"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.262" />
+
+    <Button
+
+        android:id="@+id/addBt"
+
+        android:layout_width="156dp"
+
+        android:layout_height="63dp"
+
+        android:backgroundTint="#3F51B5"
+
+        android:text="@string/addBt"
+
+        android:textSize="30sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.498"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.85" />
+
+    <TextView
+        android:id="@+id/addGenderTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addGenderTv"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <EditText
+        android:id="@+id/userAddGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/userAddGender"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.425" />
+</androidx.constraintlayout.widget.ConstraintLayout>

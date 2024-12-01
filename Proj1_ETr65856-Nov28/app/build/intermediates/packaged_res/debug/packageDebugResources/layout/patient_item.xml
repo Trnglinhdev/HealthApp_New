@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/firstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/phoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/MedicalTrackBtn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="125dp"
+                android:layout_height="36dp"
+                android:backgroundTint="#3F51B5"
+                android:text="@string/MedicalTrackBtn"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/ConsultationHisBtn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="125dp"
+                android:layout_height="36dp"
+                android:backgroundTint="#3F51B5"
+                android:text="@string/ConsultationHisBtn"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/ViewBtn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="125dp"
+                android:layout_height="36dp"
+                android:backgroundTint="#3F51B5"
+                android:text="@string/ViewBtn"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+        <!--text view for our course description-->
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
