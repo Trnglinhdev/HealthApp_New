@@ -3062,6 +3062,7 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id ConsulAddBtn
 id ConsultationHisBtn
 id FUNCTION
 id META
@@ -3136,7 +3137,9 @@ id add
 id addBdTv
 id addBt
 id addBtnS
+id addColID
 id addDate
+id addDiagnosis
 id addDuration
 id addEContact
 id addEmailTv
@@ -3155,6 +3158,7 @@ id addPhoneTvS
 id addQuantity
 id addSTv
 id addTimeTv
+id addTreatment
 id addTv
 id alertTitle
 id aligned
@@ -3220,6 +3224,8 @@ id clip_horizontal
 id clip_vertical
 id clockwise
 id closest
+id col_id
+id col_removeBtn
 id collapseActionView
 id compress
 id conSuldiagnosis
@@ -3358,6 +3364,7 @@ id line3
 id linear
 id listMode
 id listView
+id listViewConsul
 id list_item
 id logBt
 id m3_side_sheet
@@ -3492,7 +3499,6 @@ id ratio
 id rbKiloToLb
 id rbLbToKilo
 id rectangles
-id recyclerViewConsultations
 id removeBtn
 id report_drawn
 id reverseSawtooth
@@ -3579,9 +3585,7 @@ id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
 id text
 id text2
-id textConsultationDate
 id textEnd
-id textPatientName
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -3769,6 +3773,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add
 layout activity_add_schedule
+layout activity_consultation_history
 layout activity_jokes
 layout activity_landing_page
 layout activity_main
@@ -3776,8 +3781,6 @@ layout activity_main2
 layout activity_medication_tracking
 layout activity_weight_calculator
 layout appointment_item
-layout consultation_history
-layout consultation_item
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3865,6 +3868,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 string CancelBtn
+string ColID
 string ConsultationHisBtn
 string MedID
 string MedicalTrackBtn
@@ -3911,6 +3915,8 @@ string addRDateTv
 string addSTv
 string addTimeTv
 string addTv
+string adddiagnosis
+string addtreatment
 string amountTv
 string androidx_startup
 string app_name
@@ -3939,6 +3945,7 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
+string colAddBtn
 string consulDate
 string consulNamepage
 string date
@@ -3971,7 +3978,6 @@ string icon_content_description
 string item_view_role_description
 string ivJokesDescription
 string lastNameLabel
-string logBt
 string m3_exceed_max_badge_text_suffix
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular
@@ -4010,7 +4016,9 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string medAddBtn
 string medName
+string medRemoveBtn
 string medTrackTv
 string mtrl_badge_numberless_content_description
 string mtrl_checkbox_button_icon_path_checked

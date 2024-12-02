@@ -35,7 +35,6 @@ public class AddActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        //define each textview for user input
         EditText userAddFName = (EditText)findViewById(R.id.userAddFName);
         EditText userAddLName = (EditText)findViewById(R.id.userAddLName);
         EditText userAddBt = (EditText)findViewById(R.id.userAddBd);
@@ -53,9 +52,6 @@ public class AddActivity extends AppCompatActivity {
         userAddEContact.setShowSoftInputOnFocus(false);
         userAddGender.setShowSoftInputOnFocus(false);
 
-        //dbHandler = new AddActDB(AddActivity.this);
-        //SharedPreferences sharePref = PreferenceManager.getDefaultSharedPreferences(this);
-
         //set add button
         Button addBt = findViewById(R.id.addBt);
         addBt.setOnClickListener(new View.OnClickListener() {
@@ -71,28 +67,12 @@ public class AddActivity extends AppCompatActivity {
                 String emergencyContact = userAddEContact.getText().toString();
                 String gender = userAddGender.getText().toString();
 
-                //set mandatory fields
                 if(fName.isEmpty()||lName.isEmpty()||dateOfBirth.isEmpty()||phoneNumber.isEmpty()||emergencyContact.isEmpty()||email.isEmpty()||gender.isEmpty())
                 {
                     Toast.makeText(AddActivity.this,"Please enter required information with *",Toast.LENGTH_SHORT).show();
                     return;
                 }
                 else dbManager.insert(fName, lName, dateOfBirth, gender, phoneNumber, email, emergencyContact);
-
-                //set after action that link user input to database and clear textview
-                //dbHandler.addNewPatients(fName,lName,dateOfBirth,phoneNumber,email,emergencyContact,gender);
-
-                /*
-                SharedPreferences.Editor editor = sharePref.edit();
-                editor.putString("key1",fName);
-                editor.putString("key2",lName);
-                editor.putString("key3",dateOfBirth);
-                editor.putString("key4",phoneNumber);
-                editor.putString("key5",email);
-                editor.putString("key6",emergencyContact);
-                editor.putString("key7",gender);
-                editor.commit();
-                 */
 
                 Toast.makeText(AddActivity.this, "New Patient has been added.",Toast.LENGTH_SHORT).show();
                 userAddFName.setText("");

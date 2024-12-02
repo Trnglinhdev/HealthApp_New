@@ -1,75 +1,122 @@
 package com.example.proj1_etr65856;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.sql.SQLDataException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ConsultationActivity extends AppCompatActivity {
-    private RecyclerView recyclerView;
-    private ConsultationAdapter adapter;
-    private List<Consultation> consultationList;
+    ListView listView;
+    private ConsulDBManager dbManager;
 
+
+//    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.consultation_history);
+        setContentView(R.layout.activity_consultation_history);
 
-        recyclerView = findViewById(R.id.recyclerViewConsultations);
-        consultationList = new ArrayList<>();
+        Intent intent = getIntent();
+        String fName = intent.getStringExtra("fName");
+        String phone = intent.getStringExtra("phone");
 
-        Patient patient = new Patient("Joe", "Ma", "1990-05-20", "Female", "123-456-7890", "elin@email.com", "987-654-3210");
+        TextView p_phoneNumber = findViewById(R.id.addPhoneNumber);
+        p_phoneNumber.setText(phone);
 
-        consultationList.add(new Consultation(patient, "2024-01-15", "Cold and Cough", "Rest, Hydration"));
-        consultationList.add(new Consultation(patient, "2024-02-20", "Routine Health Check", "General Wellness"));
-        consultationList.add(new Consultation(patient, "2024-03-10", "Gastritis", "Antacids, Avoid Spicy Food"));
-        consultationList.add(new Consultation(patient, "2024-04-05", "Headache", "Pain Relievers, Hydration"));
-        consultationList.add(new Consultation(patient, "2024-05-15", "Back Pain", "Physical Therapy, Stretching"));
-        consultationList.add(new Consultation(patient, "2024-06-01", "Flu", "Antiviral Medication, Rest"));
-        consultationList.add(new Consultation(patient, "2024-07-13", "Allergy", "Antihistamines, Avoid Allergens"));
+        TextView p_name = findViewById(R.id.addPName);
+        p_name.setText(fName);
+
+        dbManager = new ConsulDBManager(this);
+        try {
+            dbManager.open();
+        } catch (SQLDataException e) {
+            throw new RuntimeException(e);
+        }
+
+        EditText colID = findViewById(R.id.addColID);
+        TextView pName = findViewById(R.id.addPName);
+        TextView pPNumber = findViewById(R.id.addPhoneNumber);
+        EditText date = findViewById(R.id.addDate);
+        EditText diagnosis = findViewById(R.id.addDiagnosis);
+        EditText treatment = findViewById(R.id.addTreatment);
 
 
+        Button addBtn = findViewById(R.id.ConsulAddBtn);
+        addBtn.setOnClickListener(view -> {
+            dbManager.insert(pName.getText().toString(),
+                    pPNumber.getText().toString(),
+                    date.getText().toString(),
+                    diagnosis.getText().toString(),
+                    treatment.getText().toString());
+            Intent intentadd = getIntent();
+            finish();
+            startActivity(intentadd);
+        });
+
+        //Remove consultation
+        Button removeBtn = findViewById(R.id.col_removeBtn);
+        removeBtn.setOnClickListener(v -> {
+            if(colID.getText().toString().isEmpty()){
+                Toast.makeText(this, "Please enter a colsultation ID", Toast.LENGTH_SHORT).show();
+                return;
+            }
+            else{
+                dbManager.delete(Long.parseLong(colID.getText().toString()));
+
+                Intent intentdelete = getIntent();
+                finish();
+                startActivity(intentdelete);
+            }
+        });
+
+        //Home Button
+        ImageButton btnHome = findViewById(R.id.btnHome);
+        btnHome.setOnClickListener(view -> startActivity(new Intent(ConsultationActivity.this, MainActivity2.class)));
+
+        listView = findViewById(R.id.listViewConsul);
+        ArrayList<String> collection = new ArrayList<>();
+        Cursor cursor = dbManager.fetch_colsul(fName, phone);
+
+        if (cursor != null && cursor.moveToFirst()) {
+            do {
+                String colIdList = cursor.getString(cursor.getColumnIndexOrThrow(DBColsulHistory.COLSULID));
+                String dateList = cursor.getString(cursor.getColumnIndexOrThrow(DBColsulHistory.DATE));
+                String diagnosisList = cursor.getString(cursor.getColumnIndexOrThrow(DBColsulHistory.DIAGNOSIS));
+                String treatmentList = cursor.getString(cursor.getColumnIndexOrThrow(DBColsulHistory.TREATMENT));
+                String formattedCol = String.format("Colsul ID: %s\t\tDate: %s\nDiagnosis: %s\t\tTreatment: %s\n", colIdList,dateList, diagnosisList, treatmentList);
+                collection.add(formattedCol);
+            } while (cursor.moveToNext());
+            cursor.close();
+        } else {
+            Toast.makeText(this, "No consultation found for this patient.", Toast.LENGTH_SHORT).show();
+        }
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, collection);
+        listView.setAdapter(adapter);
 
 
-        adapter = new ConsultationAdapter(consultationList);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(adapter);
     }
-    public class Consultation {
-        private Patient patient;
-        private String consultationDate;
-
-
-        private String diagnosis;
-        private String treatment;
-
-
-        public Consultation(Patient patient, String consultationDate, String diagnosis, String treatment) {
-            this.patient = patient;
-            this.consultationDate = consultationDate;
-            this.diagnosis = diagnosis;
-            this.treatment = treatment;
-        }
-        public String getPatientName() {
-            return patient.getFullName();
-        }
-
-        public String getConsultationDate() {
-            return consultationDate;
-        }
-
-        public String getDiagnosis() {
-            return diagnosis;
-        }
-
-        public String getTreatment() {
-            return treatment;
-        }
+    @Override
+    protected void onDestroy() {
+        dbManager.close();
+        super.onDestroy();
     }
+
 
 }
 

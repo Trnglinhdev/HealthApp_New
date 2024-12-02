@@ -61,9 +61,6 @@
             android:name="com.example.proj1_etr65856.AddActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.proj1_etr65856.MainActivity"
-            android:exported="false" />
-        <activity
             android:name="com.example.proj1_etr65856.Calendar"
             android:exported="false" />
         <activity

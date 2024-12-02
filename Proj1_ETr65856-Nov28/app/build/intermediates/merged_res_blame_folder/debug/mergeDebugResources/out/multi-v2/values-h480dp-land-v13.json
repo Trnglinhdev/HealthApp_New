@@ -4,7 +4,7 @@
             "outputFile": "com.example.proj1_etr65856.app-mergeDebugResources-29:/values-h480dp-land-v13/values-h480dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\huyph\\.gradle\\caches\\transforms-4\\e19b59a7e09ef8463c8487c74d5c4f40\\transformed\\material-1.10.0\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
+                    "source": "C:\\Users\\linht\\.gradle\\caches\\transforms-4\\e19b59a7e09ef8463c8487c74d5c4f40\\transformed\\material-1.10.0\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

@@ -12,6 +12,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable joker
 drawable medical_4
+id ConsulAddBtn
 id ConsultationHisBtn
 id MedicalTrackBtn
 id PatientListV
@@ -19,7 +20,9 @@ id ViewBtn
 id addBdTv
 id addBt
 id addBtnS
+id addColID
 id addDate
+id addDiagnosis
 id addDuration
 id addEContact
 id addEmailTv
@@ -38,6 +41,7 @@ id addPhoneTvS
 id addQuantity
 id addSTv
 id addTimeTv
+id addTreatment
 id addTv
 id appointmentDate
 id appointmentDetails
@@ -54,6 +58,8 @@ id btnJoker
 id calculateBt
 id calendarView
 id cancelBtn
+id col_id
+id col_removeBtn
 id conSuldiagnosis
 id conSultreatment
 id date
@@ -73,6 +79,7 @@ id jokeImageView
 id lastName
 id lastNameLabel
 id listView
+id listViewConsul
 id logBt
 id main
 id medTrackTv
@@ -88,10 +95,7 @@ id quantity
 id radioGroup
 id rbKiloToLb
 id rbLbToKilo
-id recyclerViewConsultations
 id removeBtn
-id textConsultationDate
-id textPatientName
 id textView4
 id tvResult
 id tvTitle
@@ -113,6 +117,7 @@ id userAddW
 id weightCalTv
 layout activity_add
 layout activity_add_schedule
+layout activity_consultation_history
 layout activity_jokes
 layout activity_landing_page
 layout activity_main
@@ -120,8 +125,6 @@ layout activity_main2
 layout activity_medication_tracking
 layout activity_weight_calculator
 layout appointment_item
-layout consultation_history
-layout consultation_item
 layout patient_item
 layout schedule
 layout schedule_item
@@ -129,6 +132,7 @@ layout view
 mipmap ic_launcher
 mipmap ic_launcher_round
 string CancelBtn
+string ColID
 string ConsultationHisBtn
 string MedID
 string MedicalTrackBtn
@@ -148,6 +152,8 @@ string addRDateTv
 string addSTv
 string addTimeTv
 string addTv
+string adddiagnosis
+string addtreatment
 string amountTv
 string app_name
 string btAdd
@@ -157,6 +163,7 @@ string btWeight
 string btnHome
 string btnJoker
 string calculateBt
+string colAddBtn
 string consulDate
 string consulNamepage
 string date
@@ -181,8 +188,9 @@ string genderLabel
 string header
 string ivJokesDescription
 string lastNameLabel
-string logBt
+string medAddBtn
 string medName
+string medRemoveBtn
 string medTrackTv
 string patientName
 string patientPhoneNumber

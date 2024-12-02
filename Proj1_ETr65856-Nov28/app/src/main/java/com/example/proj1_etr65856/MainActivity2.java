@@ -31,6 +31,7 @@ public class MainActivity2 extends AppCompatActivity {
     DatabaseManager dbManager;
     MedDBManager medManager;
     ScheduleDBManager scheduleManager;
+    ConsulDBManager colManager;
 
 
     @Override
@@ -73,14 +74,6 @@ public class MainActivity2 extends AppCompatActivity {
             return insets;
         });
 
-//        SharedPreferences sharePref = PreferenceManager.getDefaultSharedPreferences(this);
-//        String fName = sharePref.getString("key1","John");
-//        String lName = sharePref.getString("key2","");
-//        String dob = sharePref.getString("key3","");
-//        String phone = sharePref.getString("key4","");
-//        String email = sharePref.getString("key5","");
-//        String ec = sharePref.getString("key6","");
-//        String gender = sharePref.getString("key7","");
 
         recyclerView = findViewById(R.id.PatientListV);
 
@@ -95,6 +88,13 @@ public class MainActivity2 extends AppCompatActivity {
         medManager = new MedDBManager(this);
         try {
             medManager.open();
+        } catch (SQLDataException e) {
+            throw new RuntimeException(e);
+        }
+
+        colManager = new ConsulDBManager(this);
+        try {
+            colManager.open();
         } catch (SQLDataException e) {
             throw new RuntimeException(e);
         }
@@ -130,36 +130,4 @@ public class MainActivity2 extends AppCompatActivity {
 
 
     }
-
-//public void btnAddPressed(View v){
-//    setContentView(R.layout.activity_add);
-//    EditText editUserPhone = findViewById(R.id.userAddPhone);
-//    EditText editUserFName = findViewById(R.id.userAddFName);
-//    EditText editUserLName = findViewById(R.id.userAddLName);
-//    EditText editUserBd = findViewById(R.id.userAddBd);
-//    EditText editUserGender = findViewById(R.id.userAddGender);
-//    EditText editUserEmail = findViewById(R.id.userAddEmail);
-//    EditText editUserEContact = findViewById(R.id.userAddEContact);
-//
-//
-//    dbManager.insert(editUserPhone.getText().toString(), editUserFName.getText().toString(),editUserLName.getText().toString(),editUserBd.getText().toString(),editUserGender.getText().toString(),editUserEmail.getText().toString(),editUserEContact.getText().toString());
-//}
-
-//    public void btnFetchOne(View v){
-//        try (Cursor cursor = dbManager.fetch_fname()) { // Try-with-resources ensures cursor is closed
-//            if (cursor != null && cursor.moveToFirst()) {
-//                do {
-//                    String ID = cursor.getString(cursor.getColumnIndexOrThrow(DBPatient.ID));
-//                    String f_name = cursor.getString(cursor.getColumnIndexOrThrow(DBPatient.F_NAME));
-//                    Log.i("TEST_TAG"," first name: " + f_name);
-//
-//                } while (cursor.moveToNext());
-//            } else {
-//                Log.w("TEST_TAG", "No data found in database.");
-//            }
-//        } catch (Exception e) {
-//            Log.e("TEST_TAG", "Error while fetching data", e);
-//        }
-//    }
-
 }}

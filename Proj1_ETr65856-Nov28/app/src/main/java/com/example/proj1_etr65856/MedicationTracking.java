@@ -37,7 +37,7 @@ public class MedicationTracking extends AppCompatActivity {
 
         dbManager = new MedDBManager(this);
         try {
-            dbManager.open();  // Open the database
+            dbManager.open();
         } catch (SQLDataException e) {
             throw new RuntimeException(e);
         }
@@ -60,14 +60,25 @@ public class MedicationTracking extends AppCompatActivity {
                     date.getText().toString(),
                     duration.getText().toString());
 
-            startActivity(new Intent(MedicationTracking.this, MainActivity2.class));
+            Intent intentadd = getIntent();
+            finish();
+            startActivity(intentadd);
         });
 
         //Remove medication
         Button removeBtn = findViewById(R.id.med_removeBtn);
         removeBtn.setOnClickListener(v -> {
-            dbManager.delete(Long.parseLong(medID.getText().toString()));
-            startActivity(new Intent(MedicationTracking.this, MainActivity2.class));
+            if(medID.getText().toString().isEmpty()){
+                Toast.makeText(this, "Please enter a medication ID", Toast.LENGTH_SHORT).show();
+                return;
+            }
+            else{
+                dbManager.delete(Long.parseLong(medID.getText().toString()));
+
+                Intent intentdelete = getIntent();
+                finish();
+                startActivity(intentdelete);
+            }
         });
 
         //Home Button
@@ -102,7 +113,7 @@ public class MedicationTracking extends AppCompatActivity {
 
     @Override
     protected void onDestroy() {
-        dbManager.close();  // Close database when activity is destroyed
+        dbManager.close();
         super.onDestroy();
     }
 }

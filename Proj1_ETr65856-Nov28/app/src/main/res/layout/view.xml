@@ -9,16 +9,35 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="49dp"
+            android:layout_height="54dp"
+            android:contentDescription="@string/descriptionHome"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.013"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.001"
+            app:srcCompat="@drawable/home" />
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="618dp"
+            android:layout_height="652dp"
             android:layout_marginStart="0dp"
             android:layout_marginTop="4dp"
             android:layout_marginBottom="153dp"
             android:gravity="center"
             android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textSize="40sp"
+                android:textStyle="bold" />
 
-            <!-- Header for Patient Information -->
             <TextView
                 android:id="@+id/header"
                 android:layout_width="wrap_content"
@@ -28,7 +47,6 @@
                 android:textSize="35sp"
                 android:textStyle="bold" />
 
-            <!-- First Name -->
             <TextView
                 android:id="@+id/firstNameLabel"
                 android:layout_width="wrap_content"
@@ -43,7 +61,6 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp" />
 
-            <!-- Last Name -->
             <TextView
                 android:id="@+id/lastNameLabel"
                 android:layout_width="wrap_content"
@@ -58,7 +75,6 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp" />
 
-            <!-- Date of Birth -->
             <TextView
                 android:id="@+id/dobLabel"
                 android:layout_width="wrap_content"
@@ -71,9 +87,9 @@
                 android:id="@+id/dob"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:inputType="date"
                 android:textSize="20sp" />
 
-            <!-- Gender -->
             <TextView
                 android:id="@+id/genderLabel"
                 android:layout_width="wrap_content"
@@ -86,9 +102,8 @@
                 android:id="@+id/gender"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20sp" />
+                android:textSize="20sp"/>
 
-            <!-- Phone Number -->
             <TextView
                 android:id="@+id/phoneNumberLabel"
                 android:layout_width="wrap_content"
@@ -129,13 +144,8 @@
                 android:id="@+id/emergencyContact"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:inputType="number"
                 android:textSize="20sp" />
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-            </FrameLayout>
 
         </LinearLayout>
 
