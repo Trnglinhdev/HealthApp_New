@@ -1,10 +1,31 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.proj1_etr65856.app-mergeDebugResources-29:/values-es/values-es.xml",
+            "outputFile": "com.example.proj1_etr65856.app-mergeDebugResources-2:/values-es/values-es.xml",
             "map": [
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\huyph\\.gradle\\caches\\transforms-4\\e19b59a7e09ef8463c8487c74d5c4f40\\transformed\\material-1.10.0\\res\\values-es\\values-es.xml",
+=======
+                    "source": "C:\\Users\\linht\\Proj1_ETr65856\\caches\\transforms-4\\465241a5f202ec2b560a7102b274eb15\\transformed\\core-1.13.0\\res\\values-es\\values-es.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,154,256,356,454,561,667,787",
+                        "endColumns": "98,101,99,97,106,105,119,100",
+                        "endOffsets": "149,251,351,449,556,662,782,883"
+                    },
+                    "to": {
+                        "startLines": "38,39,40,41,42,43,44,109",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "3503,3602,3704,3804,3902,4009,4115,9520",
+                        "endColumns": "98,101,99,97,106,105,119,100",
+                        "endOffsets": "3597,3699,3799,3897,4004,4110,4230,9616"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\linht\\Proj1_ETr65856\\caches\\transforms-4\\e19b59a7e09ef8463c8487c74d5c4f40\\transformed\\material-1.10.0\\res\\values-es\\values-es.xml",
+>>>>>>> origin/hihi
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +44,11 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\huyph\\.gradle\\caches\\transforms-4\\0d99c7fcd9ceca6b5a356f75d3a9dd65\\transformed\\appcompat-1.6.1\\res\\values-es\\values-es.xml",
+=======
+                    "source": "C:\\Users\\linht\\Proj1_ETr65856\\caches\\transforms-4\\0d99c7fcd9ceca6b5a356f75d3a9dd65\\transformed\\appcompat-1.6.1\\res\\values-es\\values-es.xml",
+>>>>>>> origin/hihi
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,6 +63,7 @@
                         "endColumns": "101,112,107,84,100,127,85,80,91,93,96,93,99,93,95,95,91,91,81,106,110,98,107,107,106,158,98,82",
                         "endOffsets": "425,538,646,731,832,960,1046,1127,1219,1313,1410,1504,1604,1698,1794,1890,1982,2074,2156,2263,2374,2473,2581,2689,2796,2955,3054,9515"
                     }
+<<<<<<< HEAD
                 },
                 {
                     "source": "C:\\Users\\huyph\\.gradle\\caches\\transforms-4\\465241a5f202ec2b560a7102b274eb15\\transformed\\core-1.13.0\\res\\values-es\\values-es.xml",
@@ -55,6 +81,8 @@
                         "endColumns": "98,101,99,97,106,105,119,100",
                         "endOffsets": "3597,3699,3799,3897,4004,4110,4230,9616"
                     }
+=======
+>>>>>>> origin/hihi
                 }
             ]
         }

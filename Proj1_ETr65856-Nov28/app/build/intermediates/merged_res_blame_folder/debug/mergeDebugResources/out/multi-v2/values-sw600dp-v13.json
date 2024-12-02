@@ -1,10 +1,14 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.proj1_etr65856.app-mergeDebugResources-29:/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "com.example.proj1_etr65856.app-mergeDebugResources-2:/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\huyph\\.gradle\\caches\\transforms-4\\0d99c7fcd9ceca6b5a356f75d3a9dd65\\transformed\\appcompat-1.6.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+=======
+                    "source": "C:\\Users\\linht\\Proj1_ETr65856\\caches\\transforms-4\\0d99c7fcd9ceca6b5a356f75d3a9dd65\\transformed\\appcompat-1.6.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+>>>>>>> origin/hihi
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -14,7 +18,11 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\huyph\\.gradle\\caches\\transforms-4\\e19b59a7e09ef8463c8487c74d5c4f40\\transformed\\material-1.10.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+=======
+                    "source": "C:\\Users\\linht\\Proj1_ETr65856\\caches\\transforms-4\\e19b59a7e09ef8463c8487c74d5c4f40\\transformed\\material-1.10.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+>>>>>>> origin/hihi
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
