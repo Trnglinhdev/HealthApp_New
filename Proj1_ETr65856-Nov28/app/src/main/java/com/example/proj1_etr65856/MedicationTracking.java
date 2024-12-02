@@ -60,15 +60,12 @@ public class MedicationTracking extends AppCompatActivity {
                     date.getText().toString(),
                     duration.getText().toString());
 
-<<<<<<< HEAD
             Intent intent1 = getIntent();  // Get the current intent
             finish();  // Close the current activity
             startActivity(intent1);
-=======
             Intent intentadd = getIntent();
             finish();
             startActivity(intentadd);
->>>>>>> 4e16f4579e65d35f602616c25eb899fe6d932afa
         });
 
         //Remove medication
