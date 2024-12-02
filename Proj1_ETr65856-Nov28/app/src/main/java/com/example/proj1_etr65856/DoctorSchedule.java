@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.CalendarView;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -82,6 +83,8 @@ public class DoctorSchedule extends AppCompatActivity {
         arBtn.setOnClickListener(v -> {
             startActivity(new Intent(DoctorSchedule.this, AddSchedule.class));
         });
+        ImageButton btnHome = findViewById(R.id.btnHome);
+        btnHome.setOnClickListener(view -> startActivity(new Intent(DoctorSchedule.this, MainActivity2.class)));
     }
 
 }

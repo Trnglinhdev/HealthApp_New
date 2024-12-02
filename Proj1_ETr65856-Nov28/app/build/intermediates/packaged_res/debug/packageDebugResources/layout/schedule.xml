@@ -2,9 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp">
 
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="49dp"
+        android:layout_height="54dp"
+        android:contentDescription="@string/descriptionHome"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.013"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001"
+        app:srcCompat="@drawable/home" />
     <!-- Display selected month and year -->
     <TextView
         android:id="@+id/monthYearText"
@@ -39,7 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:gravity="center"
-        android:text="Appointments"
+        android:text="@string/reminder"
         android:textSize="20sp"
         android:autoSizeTextType="uniform"
         android:autoSizeMinTextSize="10sp"
@@ -61,7 +75,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#3F51B5"
-        android:text="Add/Remove"
+        android:text="@string/ScheBtn"
         android:textSize="18sp"
         android:layout_gravity="center_horizontal"
         android:padding="4dp" />

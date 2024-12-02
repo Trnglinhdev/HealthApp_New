@@ -7,6 +7,7 @@
     <string name="ConsultationHisBtn">Consultation</string>
     <string name="MedID">Med ID:</string>
     <string name="MedicalTrackBtn">Medical Track</string>
+    <string name="ScheBtn">Add/Remove</string>
     <string name="UpdateBtn">Update</string>
     <string name="ViewBtn">View</string>
     <string name="addBdTv">*Date Of Birth:</string>

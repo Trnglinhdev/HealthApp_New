@@ -52,9 +52,6 @@
     <string name="colAddBtn">Add</string>
 
 
-
-    ColID
-
     <string name="btAdd" translatable="false">"Add "</string>
     <string name="btSchedule">Schedule</string>
     <string name="tvPatientName">Name</string>
@@ -71,6 +68,7 @@
     <string name="selectDate">Select a Date</string>
 
     <string name="reminder">Reminder - Upcoming appointments</string>
+    <string name="ScheBtn">Add/Remove</string>
     <string name="btnHome">home button</string>
     <string name="descriptionHome">image of home</string>
     <string name="btnJoker" translatable="false">Joke</string>

@@ -56,7 +56,7 @@ public class AddSchedule extends AppCompatActivity {
         Button addBt = findViewById(R.id.addScheduleBtn);
         addBt.setOnClickListener(v -> {
             //dbManager.insert("Jadon", "1234123213", "Physical Exam", "12:00", "4/12/2024", "Room 123");
-
+            //appointment date need to be no "0". Ex: 12/7/2024
             dbManager.insert(userAddFName.getText().toString(),
                     userPNumber.getText().toString(),
                     userType.getText().toString(),
@@ -69,7 +69,13 @@ public class AddSchedule extends AppCompatActivity {
 
         Button removeBtn = findViewById(R.id.removeScheduleBtn);
         removeBtn.setOnClickListener(v -> {
-            dbManager.delete(Long.parseLong(userAddSID.getText().toString()));
+            if(userAddSID.getText().toString().isEmpty()){
+                Toast.makeText(this, "Please enter a schedule ID", Toast.LENGTH_SHORT).show();
+                return;
+            }
+            else{
+                dbManager.delete(Long.parseLong(userAddSID.getText().toString()));
+            }
             startActivity(new Intent(AddSchedule.this, DoctorSchedule.class));
         });
 
