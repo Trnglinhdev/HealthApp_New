@@ -102,6 +102,8 @@ public class PatientAdapter extends RecyclerView.Adapter<PatientAdapter.ViewHold
         });
         holder.btnConsultationHis.setOnClickListener(v ->{
             Intent intent = new Intent(context, ConsultationActivity.class);
+            intent.putExtra("phone", patient.getPhoneNumber());
+            intent.putExtra("fName", patient.getFirstName());
             context.startActivity(intent);
         });
         holder.btnView.setOnClickListener(v ->{
