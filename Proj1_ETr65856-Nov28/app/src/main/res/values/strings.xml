@@ -19,7 +19,8 @@
     <string name="addGenderTv">Gender:</string>
     <string name="userAddGender">(F/M/Others)</string>
     <string name="medTrackTv">Medication Tracking</string>
-    <string name="logBt">+</string>
+    <string name="medAddBtn">Add</string>
+    <string name="medRemoveBtn">Remove</string>
     <string name="pillsNameTv">*Pills Name:</string>
     <string name="amountTv">*Amount:</string>
     <string name="durationTv">*Duration:</string>
@@ -43,6 +44,14 @@
     <string name="emergencyContactLabel">Emergency Contact:</string>
     <string name="description">Medical Tools</string>
     <string name="tvTitle">Health Connect</string>
+    <string name="ColID">Col ID:</string>
+    <string name="adddiagnosis">Cough</string>
+    <string name="addtreatment">Humidifier,etc.</string>
+    <string name="colAddBtn">Add</string>
+
+
+
+    ColID
 
     <string name="btAdd" translatable="false">"Add "</string>
     <string name="btSchedule">Schedule</string>
@@ -55,8 +64,8 @@
     <string name="addNoteTv">Note:</string>
     <string name="userAddNote">Details</string>
     <string name="userAddTime">00:00</string>
-    <string name="diagnosis">Diagnosis</string>
-    <string name="treatment">Treatment</string>
+    <string name="diagnosis">Diagnosis:</string>
+    <string name="treatment">Treatment:</string>
     <string name="selectDate">Select a Date</string>
 
     <string name="reminder">Reminder - Upcoming appointments</string>
@@ -86,12 +95,12 @@
     <string name="quantity">Quantity:</string>
     <string name="date">Date:</string>
     <string name="duration">Duration:</string>
-    <string name="editTextMedID">Add Medication ID</string>
+    <string name="editTextMedID">ID # To Remove</string>
     <string name="editTextPName">Add Patient Name</string>
     <string name="editTextPhoneNumber">Add Patient Phone Number</string>
     <string name="editTextMedName">Add Medication Name</string>
     <string name="editTextQuantity">Add Quantity</string>
-    <string name="editTextDate">Add Date</string>
+    <string name="editTextDate">(MM/DD/YYYY)</string>
     <string name="editTextDuration">Add Duration</string>
 
 </resources>

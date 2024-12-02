@@ -12,138 +12,181 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#3F51B5"
-        android:text="-"
-        android:textSize="20sp"
+        android:text="@string/medRemoveBtn"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintHorizontal_bias="0.683"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.965" />
+        app:layout_constraintVertical_bias="0.976" />
 
     <EditText
         android:id="@+id/addQuantity"
         android:layout_width="201dp"
         android:layout_height="29dp"
+        android:background="@null"
         android:ems="10"
         android:hint="@string/editTextQuantity"
         android:inputType="text"
-        android:textSize="20sp"
-        android:background="@null"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.723"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.772" />
+        app:layout_constraintVertical_bias="0.823" />
 
     <TextView
         android:id="@+id/date"
         android:layout_width="81dp"
-        android:layout_height="31dp"
+        android:layout_height="29dp"
         android:text="@string/date"
         android:textAlignment="textEnd"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintHorizontal_bias="0.154"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/medTrackTv"
-        app:layout_constraintVertical_bias="0.814" />
+        app:layout_constraintVertical_bias="0.856" />
 
     <TextView
         android:id="@+id/duration"
         android:layout_width="81dp"
-        android:layout_height="31dp"
+        android:layout_height="29dp"
         android:text="@string/duration"
-        android:textSize="20sp"
-        android:textStyle="bold"
         android:textAlignment="textEnd"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.163"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/medTrackTv"
-        app:layout_constraintVertical_bias="0.873" />
-
-    <TextView
-        android:id="@+id/med_name"
-        android:layout_width="106dp"
-        android:layout_height="31dp"
-        android:text="@string/medName"
-        android:textAlignment="textEnd"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintHorizontal_bias="0.154"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/medTrackTv"
-        app:layout_constraintVertical_bias="0.684" />
+        app:layout_constraintVertical_bias="0.898" />
 
     <EditText
         android:id="@+id/addMedName"
         android:layout_width="201dp"
         android:layout_height="29dp"
+        android:background="@null"
         android:ems="10"
         android:hint="@string/editTextMedName"
         android:inputType="text"
-        android:textSize="20sp"
-        android:background="@null"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.723"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.709" />
+        app:layout_constraintVertical_bias="0.779" />
 
     <EditText
         android:id="@+id/addDate"
         android:layout_width="201dp"
         android:layout_height="29dp"
+        android:background="@null"
         android:ems="10"
         android:hint="@string/editTextDate"
-        android:inputType="text"
-        android:textSize="20sp"
-        android:background="@null"
+        android:inputType="date"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.723"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.829" />
+        app:layout_constraintVertical_bias="0.864" />
 
     <EditText
         android:id="@+id/addDuration"
         android:layout_width="201dp"
         android:layout_height="29dp"
+        android:background="@null"
         android:ems="10"
         android:hint="@string/editTextDuration"
         android:inputType="text"
-        android:textSize="20sp"
-        android:background="@null"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.723"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.883" />
+        app:layout_constraintVertical_bias="0.905" />
 
     <TextView
         android:id="@+id/quantity"
         android:layout_width="90dp"
-        android:layout_height="34dp"
+        android:layout_height="29dp"
         android:text="@string/quantity"
         android:textAlignment="textEnd"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintHorizontal_bias="0.13"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/medTrackTv"
-        app:layout_constraintVertical_bias="0.758" />
+        app:layout_constraintVertical_bias="0.811" />
+
+    <TextView
+        android:id="@+id/med_name"
+        android:layout_width="106dp"
+        android:layout_height="29dp"
+        android:text="@string/medName"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/medTrackTv"
+        app:layout_constraintVertical_bias="0.763" />
+
+    <TextView
+        android:id="@+id/pname"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:text="@string/patientName"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.695" />
+
+    <TextView
+        android:id="@+id/p_pnumber"
+        android:layout_width="110dp"
+        android:layout_height="29dp"
+        android:text="@string/patientPhoneNumber"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/medTrackTv"
+        app:layout_constraintVertical_bias="0.719" />
+
+    <TextView
+        android:id="@+id/med_id"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:text="@string/MedID"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.655" />
 
     <ImageButton
         android:id="@+id/btnHome"
@@ -162,13 +205,14 @@
 
     <ListView
         android:id="@+id/listView"
-        android:layout_width="401dp"
-        android:layout_height="240dp"
+        android:layout_width="411dp"
+        android:layout_height="328dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.213" />
+        app:layout_constraintVertical_bias="0.29" />
 
     <TextView
         android:id="@+id/medTrackTv"
@@ -185,106 +229,62 @@
         app:layout_constraintVertical_bias="0.08" />
 
 
-    <TextView
-        android:id="@+id/med_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/MedID"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.17"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.518" />
-
-    <TextView
-        android:id="@+id/pname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/patientName"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.041"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.58" />
-
-    <TextView
-        android:id="@+id/p_pnumber"
-        android:layout_width="110dp"
-        android:layout_height="28dp"
-        android:text="@string/patientPhoneNumber"
-        android:textAlignment="textEnd"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.083"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/medTrackTv"
-        app:layout_constraintVertical_bias="0.616" />
-
     <Button
         android:id="@+id/logBt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#3F51B5"
-        android:text="@string/logBt"
-        android:textSize="20sp"
+        android:text="@string/medAddBtn"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.26"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.966" />
+        app:layout_constraintVertical_bias="0.976" />
 
     <EditText
         android:id="@+id/addMedID"
         android:layout_width="209dp"
-        android:layout_height="30dp"
-        android:ems="13"
-        android:hint="@string/editTextMedID"
-        android:textSize="20sp"
+        android:layout_height="29dp"
         android:background="@null"
+        android:ems="13"
+        android:inputType="number"
+        android:hint="@string/editTextMedID"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.752"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.516" />
+        app:layout_constraintVertical_bias="0.653" />
 
     <TextView
         android:id="@+id/addPName"
         android:layout_width="204dp"
-        android:layout_height="30dp"
-        android:ems="10"
-        android:hint="@string/editTextPName"
-        android:textSize="20sp"
+        android:layout_height="29dp"
         android:background="@null"
+        android:ems="10"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.734"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.579" />
+        app:layout_constraintVertical_bias="0.696" />
 
     <TextView
         android:id="@+id/addPhoneNumber"
         android:layout_width="201dp"
         android:layout_height="29dp"
-        android:ems="10"
-        android:hint="@string/editTextPhoneNumber"
-        android:textSize="20sp"
         android:background="@null"
+        android:ems="10"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.723"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.646" />
+        app:layout_constraintVertical_bias="0.737" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

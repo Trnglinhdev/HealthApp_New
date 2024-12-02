@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 #Mon Dec 02 00:05:49 EST 2024
 base.0=D\:\\HealthApp_New\\Proj1_ETr65856-Nov28\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=D\:\\HealthApp_New\\Proj1_ETr65856-Nov28\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=D\:\\HealthApp_New\\Proj1_ETr65856-Nov28\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
+=======
+#Mon Dec 02 00:25:52 GMT-08:00 2024
+base.0=C\:\\Users\\linht\\HealthApp_New\\Proj1_ETr65856-Nov28\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\linht\\HealthApp_New\\Proj1_ETr65856-Nov28\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\linht\\HealthApp_New\\Proj1_ETr65856-Nov28\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
+>>>>>>> 4e16f4579e65d35f602616c25eb899fe6d932afa
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=6/classes.dex

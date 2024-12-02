@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/jokeImageView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MedicationTracking">
+
+    <Button
+        android:id="@+id/col_removeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3F51B5"
+        android:text="@string/medRemoveBtn"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.683"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+
+    <EditText
+        android:id="@+id/addDiagnosis"
+        android:layout_width="201dp"
+        android:layout_height="29dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="@string/adddiagnosis"
+        android:inputType="text"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.723"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.82" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="81dp"
+        android:layout_height="29dp"
+        android:text="@string/date"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/medTrackTv"
+        app:layout_constraintVertical_bias="0.763" />
+
+    <EditText
+        android:id="@+id/addDate"
+        android:layout_width="201dp"
+        android:layout_height="29dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="@string/editTextDate"
+        android:inputType="text"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.723"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.779" />
+
+
+    <EditText
+        android:id="@+id/addTreatment"
+        android:layout_width="201dp"
+        android:layout_height="29dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="@string/addtreatment"
+        android:inputType="date"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.723"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.891" />
+
+    <TextView
+        android:id="@+id/conSultreatment"
+        android:layout_width="90dp"
+        android:layout_height="29dp"
+        android:text="@string/treatment"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/medTrackTv"
+        app:layout_constraintVertical_bias="0.881" />
+
+    <TextView
+        android:id="@+id/conSuldiagnosis"
+        android:layout_width="106dp"
+        android:layout_height="29dp"
+        android:text="@string/diagnosis"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/medTrackTv"
+        app:layout_constraintVertical_bias="0.808" />
+
+    <TextView
+        android:id="@+id/pname"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:text="@string/patientName"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.695" />
+
+    <TextView
+        android:id="@+id/p_pnumber"
+        android:layout_width="110dp"
+        android:layout_height="29dp"
+        android:text="@string/patientPhoneNumber"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/medTrackTv"
+        app:layout_constraintVertical_bias="0.719" />
+
+    <TextView
+        android:id="@+id/col_id"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:text="@string/ColID"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.653" />
+
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="49dp"
+        android:layout_height="54dp"
+        android:contentDescription="@string/descriptionHome"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.013"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001"
+        app:srcCompat="@drawable/home" />
+
+
+    <ListView
+        android:id="@+id/listViewConsul"
+        android:layout_width="411dp"
+        android:layout_height="328dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29" />
+
+    <TextView
+        android:id="@+id/medTrackTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/consulNamepage"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+
+    <Button
+        android:id="@+id/ConsulAddBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3F51B5"
+        android:text="@string/colAddBtn"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <EditText
+        android:id="@+id/addColID"
+        android:layout_width="209dp"
+        android:layout_height="29dp"
+        android:background="@null"
+        android:ems="13"
+        android:hint="@string/editTextMedID"
+        android:inputType="number"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.752"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.653" />
+
+    <TextView
+        android:id="@+id/addPName"
+        android:layout_width="204dp"
+        android:layout_height="29dp"
+        android:background="@null"
+        android:ems="10"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.734"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.696" />
+
+    <TextView
+        android:id="@+id/addPhoneNumber"
+        android:layout_width="201dp"
+        android:layout_height="29dp"
+        android:background="@null"
+        android:ems="10"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.723"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.737" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

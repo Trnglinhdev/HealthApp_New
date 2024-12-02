@@ -3,6 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <string name="CancelBtn">Cancel</string>
+    <string name="ColID">Col ID:</string>
     <string name="ConsultationHisBtn">Consultation</string>
     <string name="MedID">Med ID:</string>
     <string name="MedicalTrackBtn">Medical Track</string>
@@ -22,6 +23,8 @@
     <string name="addSTv">Schedule New Appointment</string>
     <string name="addTimeTv">*TIme:</string>
     <string name="addTv">Add New Patient</string>
+    <string name="adddiagnosis">Cough</string>
+    <string name="addtreatment">Humidifier,etc.</string>
     <string name="amountTv">*Amount:</string>
     <string name="app_name">Proj1_ETr65856</string>
     <string name="btAdd" translatable="false">"Add "</string>
@@ -31,19 +34,20 @@
     <string name="btnHome">home button</string>
     <string name="btnJoker" translatable="false">Joke</string>
     <string name="calculateBt">Calculate</string>
+    <string name="colAddBtn">Add</string>
     <string name="consulDate">Consultation Date</string>
     <string name="consulNamepage">Consultation History</string>
     <string name="date">Date:</string>
     <string name="description">Medical Tools</string>
     <string name="descriptionHome">image of home</string>
     <string name="descriptionJoker">image of joker</string>
-    <string name="diagnosis">Diagnosis</string>
+    <string name="diagnosis">Diagnosis:</string>
     <string name="dobLabel">Date of Birth:</string>
     <string name="duration">Duration:</string>
     <string name="durationTv">*Duration:</string>
-    <string name="editTextDate">Add Date</string>
+    <string name="editTextDate">(MM/DD/YYYY)</string>
     <string name="editTextDuration">Add Duration</string>
-    <string name="editTextMedID">Add Medication ID</string>
+    <string name="editTextMedID">ID # To Remove</string>
     <string name="editTextMedName">Add Medication Name</string>
     <string name="editTextPName">Add Patient Name</string>
     <string name="editTextPhoneNumber">Add Patient Phone Number</string>
@@ -55,8 +59,9 @@
     <string name="header">Patient Information</string>
     <string name="ivJokesDescription">image of jokes</string>
     <string name="lastNameLabel">Last Name:</string>
-    <string name="logBt">+</string>
+    <string name="medAddBtn">Add</string>
     <string name="medName">Med Name:</string>
+    <string name="medRemoveBtn">Remove</string>
     <string name="medTrackTv">Medication Tracking</string>
     <string name="patientName">Patient Name</string>
     <string name="patientPhoneNumber">Phone #:</string>
@@ -69,7 +74,7 @@
     <string name="reason">Consultation Reason</string>
     <string name="reminder">Reminder - Upcoming appointments</string>
     <string name="selectDate">Select a Date</string>
-    <string name="treatment">Treatment</string>
+    <string name="treatment">Treatment:</string>
     <string name="tvPatientName">Name</string>
     <string name="tvPatientSex">Sex</string>
     <string name="tvResult">Result of calculated data</string>

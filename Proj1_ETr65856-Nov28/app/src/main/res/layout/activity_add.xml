@@ -117,7 +117,7 @@
 
         android:hint="@string/userAddBd"
 
-        android:inputType="text"
+        android:inputType="date"
 
         android:textAlignment="center"
 
@@ -131,8 +131,7 @@
 
         app:layout_constraintTop_toTopOf="parent"
 
-        app:layout_constraintVertical_bias="0.346" />
-
+        app:layout_constraintVertical_bias="0.345" />
 
     <TextView
 
@@ -174,7 +173,7 @@
 
         android:hint="@string/userAddPhone"
 
-        android:inputType="text"
+        android:inputType="number"
 
         android:textAlignment="center"
 
@@ -232,7 +231,7 @@
 
         android:hint="@string/userAddEContact"
 
-        android:inputType="text"
+        android:inputType="number"
 
         android:textAlignment="center"
 

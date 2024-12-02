@@ -3,8 +3,10 @@ package com.example.proj1_etr65856;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -78,6 +80,14 @@ public class ViewDetailPatient extends AppCompatActivity {
         removeBtn.setOnClickListener(v -> {
             dbManager.delete(phoneNumber.getText().toString());
             startActivity(new Intent(ViewDetailPatient.this,MainActivity2.class));
+        });
+
+        ImageButton btnHome = (ImageButton) findViewById(R.id.btnHome);
+        btnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ViewDetailPatient.this, MainActivity2.class));
+            }
         });
     }
 }
