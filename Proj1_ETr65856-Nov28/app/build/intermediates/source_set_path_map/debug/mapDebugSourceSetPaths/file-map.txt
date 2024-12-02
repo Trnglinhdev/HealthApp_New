@@ -25,10 +25,10 @@ com.example.proj1_etr65856.app-appcompat-resources-1.6.1-23 C:\Users\huyph\.grad
 com.example.proj1_etr65856.app-lifecycle-livedata-core-2.6.2-24 C:\Users\huyph\.gradle\caches\transforms-4\ef6c6b4c3b27b9745c478dde71216359\transformed\lifecycle-livedata-core-2.6.2\res
 com.example.proj1_etr65856.app-emoji2-views-helper-1.2.0-25 C:\Users\huyph\.gradle\caches\transforms-4\f1ffe307371356d1a8f3266c56e7f048\transformed\emoji2-views-helper-1.2.0\res
 com.example.proj1_etr65856.app-activity-1.9.1-26 C:\Users\huyph\.gradle\caches\transforms-4\f829d08e52a8036769c877af92e29ca0\transformed\activity-1.9.1\res
-com.example.proj1_etr65856.app-pngs-27 C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\build\generated\res\pngs\debug
-com.example.proj1_etr65856.app-resValues-28 C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\build\generated\res\resValues\debug
-com.example.proj1_etr65856.app-packageDebugResources-29 C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.proj1_etr65856.app-packageDebugResources-30 C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.proj1_etr65856.app-debug-31 C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\build\intermediates\merged_res\debug\mergeDebugResources
-com.example.proj1_etr65856.app-debug-32 C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\debug\res
-com.example.proj1_etr65856.app-main-33 C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\res
+com.example.proj1_etr65856.app-pngs-27 D:\HealthApp_New\Proj1_ETr65856-Nov28\app\build\generated\res\pngs\debug
+com.example.proj1_etr65856.app-resValues-28 D:\HealthApp_New\Proj1_ETr65856-Nov28\app\build\generated\res\resValues\debug
+com.example.proj1_etr65856.app-packageDebugResources-29 D:\HealthApp_New\Proj1_ETr65856-Nov28\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.proj1_etr65856.app-packageDebugResources-30 D:\HealthApp_New\Proj1_ETr65856-Nov28\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.proj1_etr65856.app-debug-31 D:\HealthApp_New\Proj1_ETr65856-Nov28\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.proj1_etr65856.app-debug-32 D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\debug\res
+com.example.proj1_etr65856.app-main-33 D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\res

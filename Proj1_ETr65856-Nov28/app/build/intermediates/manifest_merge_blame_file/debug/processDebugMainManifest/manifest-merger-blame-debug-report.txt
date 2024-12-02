@@ -9,11 +9,11 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-11-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:5:5-81
-11-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:5:22-78
+11-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:5:5-81
+11-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:5:22-78
 12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-12-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:6:5-80
-12-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:6:22-77
+12-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:6:5-80
+12-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:6:22-77
 13
 14    <permission
 14-->[androidx.core:core:1.13.0] C:\Users\huyph\.gradle\caches\transforms-4\465241a5f202ec2b560a7102b274eb15\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
@@ -27,127 +27,127 @@
 18-->[androidx.core:core:1.13.0] C:\Users\huyph\.gradle\caches\transforms-4\465241a5f202ec2b560a7102b274eb15\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
 19
 20    <application
-20-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:8:5-69:19
+20-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:8:5-69:19
 21        android:allowBackup="true"
-21-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:9:9-35
+21-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:9:9-35
 22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 22-->[androidx.core:core:1.13.0] C:\Users\huyph\.gradle\caches\transforms-4\465241a5f202ec2b560a7102b274eb15\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 23        android:dataExtractionRules="@xml/data_extraction_rules"
-23-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:10:9-65
+23-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:10:9-65
 24        android:debuggable="true"
 25        android:extractNativeLibs="false"
 26        android:fullBackupContent="@xml/backup_rules"
-26-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:11:9-54
+26-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:11:9-54
 27        android:icon="@mipmap/ic_launcher"
-27-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:12:9-43
+27-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:12:9-43
 28        android:label="@string/app_name"
-28-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:13:9-41
+28-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:13:9-41
 29        android:roundIcon="@mipmap/ic_launcher_round"
-29-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:14:9-54
+29-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:14:9-54
 30        android:supportsRtl="true"
-30-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:15:9-35
+30-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:15:9-35
 31        android:testOnly="true"
 32        android:theme="@style/Theme.Proj1_ETr65856" >
-32-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:16:9-52
+32-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:16:9-52
 33        <activity
-33-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:18:9-20:40
+33-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:18:9-20:40
 34            android:name="com.example.proj1_etr65856.WeightCalculator"
-34-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:19:13-45
+34-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:19:13-45
 35            android:exported="false" />
-35-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:20:13-37
+35-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:20:13-37
 36        <activity
-36-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:21:9-23:40
+36-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:21:9-23:40
 37            android:name="com.example.proj1_etr65856.ConsultationActivity"
-37-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:22:13-49
+37-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:22:13-49
 38            android:exported="false" />
-38-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:23:13-37
+38-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:23:13-37
 39        <activity
-39-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:24:9-26:40
+39-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:24:9-26:40
 40            android:name="com.example.proj1_etr65856.ViewDetailPatient"
-40-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:25:13-46
+40-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:25:13-46
 41            android:exported="false" />
-41-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:26:13-37
+41-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:26:13-37
 42        <activity
-42-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:27:9-29:40
+42-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:27:9-29:40
 43            android:name="com.example.proj1_etr65856.MedicationTracking"
-43-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:28:13-47
+43-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:28:13-47
 44            android:exported="false" />
-44-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:29:13-37
+44-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:29:13-37
 45        <activity
-45-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:30:9-32:40
+45-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:30:9-32:40
 46            android:name="com.example.proj1_etr65856.Jokes"
-46-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:31:13-34
+46-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:31:13-34
 47            android:exported="false" />
-47-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:32:13-37
+47-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:32:13-37
 48        <activity
-48-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:33:9-35:40
+48-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:33:9-35:40
 49            android:name="com.example.proj1_etr65856.MainActivity2"
-49-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:34:13-42
+49-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:34:13-42
 50            android:exported="false" />
-50-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:35:13-37
+50-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:35:13-37
 51        <activity
-51-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:36:9-38:40
+51-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:36:9-38:40
 52            android:name="com.example.proj1_etr65856.DoctorSchedule"
-52-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:37:13-43
+52-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:37:13-43
 53            android:exported="false" />
-53-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:38:13-37
+53-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:38:13-37
 54        <activity
-54-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:39:9-41:40
+54-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:39:9-41:40
 55            android:name="com.example.proj1_etr65856.Patient"
-55-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:40:13-36
+55-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:40:13-36
 56            android:exported="false" />
-56-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:41:13-37
+56-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:41:13-37
 57        <activity
-57-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:42:9-44:40
+57-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:42:9-44:40
 58            android:name="com.example.proj1_etr65856.AddSchedule"
-58-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:43:13-40
+58-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:43:13-40
 59            android:exported="false" />
-59-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:44:13-37
+59-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:44:13-37
 60        <activity
-60-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:45:9-47:40
+60-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:45:9-47:40
 61            android:name="com.example.proj1_etr65856.AddActivity"
-61-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:46:13-40
+61-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:46:13-40
 62            android:exported="false" />
-62-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:47:13-37
+62-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:47:13-37
 63        <activity
-63-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:48:9-50:40
+63-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:48:9-50:40
 64            android:name="com.example.proj1_etr65856.MainActivity"
-64-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:49:13-41
+64-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:49:13-41
 65            android:exported="false" />
-65-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:50:13-37
+65-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:50:13-37
 66        <activity
-66-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:51:9-53:40
+66-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:51:9-53:40
 67            android:name="com.example.proj1_etr65856.Calendar"
-67-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:52:13-37
+67-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:52:13-37
 68            android:exported="false" />
-68-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:53:13-37
+68-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:53:13-37
 69        <activity
-69-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:54:9-56:40
+69-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:54:9-56:40
 70            android:name="com.example.proj1_etr65856.AppointmentAdapter"
-70-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:55:13-47
+70-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:55:13-47
 71            android:exported="false" />
-71-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:56:13-37
+71-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:56:13-37
 72        <activity
-72-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:57:9-59:40
+72-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:57:9-59:40
 73            android:name="com.example.proj1_etr65856.PatientAdapter"
-73-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:58:13-43
+73-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:58:13-43
 74            android:exported="false" />
-74-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:59:13-37
+74-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:59:13-37
 75        <activity
-75-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:60:9-68:20
+75-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:60:9-68:20
 76            android:name="com.example.proj1_etr65856.LandingPage"
-76-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:61:13-40
+76-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:61:13-40
 77            android:exported="true" >
-77-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:62:13-36
+77-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:62:13-36
 78            <intent-filter>
-78-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:63:13-67:29
+78-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:63:13-67:29
 79                <action android:name="android.intent.action.MAIN" />
-79-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:64:17-69
-79-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:64:25-66
+79-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:64:17-69
+79-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:64:25-66
 80
 81                <category android:name="android.intent.category.LAUNCHER" />
-81-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:66:17-77
-81-->C:\Users\huyph\Downloads\Proj1_ETr65856-Nov28\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:66:27-74
+81-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:66:17-77
+81-->D:\HealthApp_New\Proj1_ETr65856-Nov28\app\src\main\AndroidManifest.xml:66:27-74
 82            </intent-filter>
 83        </activity>
 84

@@ -21,6 +21,25 @@
                     }
                 },
                 {
+                    "source": "D:\\HealthApp_New\\Proj1_ETr65856-Nov28\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "102",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "326"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "172"
+                    }
+                },
+                {
                     "source": "C:\\Users\\huyph\\.gradle\\caches\\transforms-4\\0d99c7fcd9ceca6b5a356f75d3a9dd65\\transformed\\appcompat-1.6.1\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
@@ -35,25 +54,6 @@
                         "startOffsets": "177,247,331,415,511,613,715,3570",
                         "endColumns": "69,83,83,95,101,101,93,88",
                         "endOffsets": "242,326,410,506,608,710,804,3654"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\huyph\\Downloads\\Proj1_ETr65856-Nov28\\Proj1_ETr65856-Nov28\\app\\src\\main\\res\\values-night\\themes.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "100",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "321"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "172"
                     }
                 }
             ]
