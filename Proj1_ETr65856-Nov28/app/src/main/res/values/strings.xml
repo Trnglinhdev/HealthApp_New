@@ -2,6 +2,7 @@
     <string name="app_name">Proj1_ETr65856</string>
     <string name="addTv">Add New Patient</string>
     <string name="addFNameTv">*First Name:</string>
+    <string name="addSID">Schedule ID to Remove</string>
     <string name="userAddFName">John</string>
     <string name="addBdTv">*Date Of Birth:</string>
     <string name="userAddBd">(MM/DD/YYYY)</string>
@@ -9,6 +10,7 @@
     <string name="userAddRDate">(MM/DD/YYYY)</string>
     <string name="addPhoneTv">*Phone Number:</string>
     <string name="userAddPhone">(XXX) - XXX - XXXX</string>
+    <string name="s_type">General Checkup</string>
     <string name="addEContact">*Emergency Contact:</string>
     <string name="userAddEContact">(XXX) - XXX - XXXX</string>
     <string name="addEmailTv">E-Mail:</string>

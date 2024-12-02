@@ -20,6 +20,7 @@
     <string name="addNoteTv">Note:</string>
     <string name="addPhoneTv">*Phone Number:</string>
     <string name="addRDateTv">Register Date:</string>
+    <string name="addSID">Schedule ID to Remove</string>
     <string name="addSTv">Schedule New Appointment</string>
     <string name="addTimeTv">*TIme:</string>
     <string name="addTv">Add New Patient</string>
@@ -73,6 +74,7 @@
     <string name="rbLbToKilo">Convert Pounds to Kilograms</string>
     <string name="reason">Consultation Reason</string>
     <string name="reminder">Reminder - Upcoming appointments</string>
+    <string name="s_type">General Checkup</string>
     <string name="selectDate">Select a Date</string>
     <string name="treatment">Treatment:</string>
     <string name="tvPatientName">Name</string>

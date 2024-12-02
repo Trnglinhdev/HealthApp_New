@@ -1,14 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.proj1_etr65856.app-mergeDebugResources-2:/values-v24/values-v24.xml",
+            "outputFile": "com.example.proj1_etr65856.app-mergeDebugResources-29:/values-v24/values-v24.xml",
             "map": [
                 {
-<<<<<<< HEAD
                     "source": "C:\\Users\\huyph\\.gradle\\caches\\transforms-4\\e19b59a7e09ef8463c8487c74d5c4f40\\transformed\\material-1.10.0\\res\\values-v24\\values-v24.xml",
-=======
-                    "source": "C:\\Users\\linht\\Proj1_ETr65856\\caches\\transforms-4\\e19b59a7e09ef8463c8487c74d5c4f40\\transformed\\material-1.10.0\\res\\values-v24\\values-v24.xml",
->>>>>>> origin/hihi
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -27,11 +23,7 @@
                     }
                 },
                 {
-<<<<<<< HEAD
                     "source": "C:\\Users\\huyph\\.gradle\\caches\\transforms-4\\0d99c7fcd9ceca6b5a356f75d3a9dd65\\transformed\\appcompat-1.6.1\\res\\values-v24\\values-v24.xml",
-=======
-                    "source": "C:\\Users\\linht\\Proj1_ETr65856\\caches\\transforms-4\\0d99c7fcd9ceca6b5a356f75d3a9dd65\\transformed\\appcompat-1.6.1\\res\\values-v24\\values-v24.xml",
->>>>>>> origin/hihi
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

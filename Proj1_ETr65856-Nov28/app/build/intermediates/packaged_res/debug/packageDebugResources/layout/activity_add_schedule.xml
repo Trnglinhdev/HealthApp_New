@@ -9,6 +9,50 @@
     tools:layout_editor_absoluteX="-22dp"
     tools:layout_editor_absoluteY="-2dp">
 
+    <Button
+        android:id="@+id/removeScheduleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3F51B5"
+        android:text="Remove"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.726"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <EditText
+        android:id="@+id/addLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Radiology"
+        android:inputType="text"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.83" />
+
+    <TextView
+        android:id="@+id/locationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location:"
+        android:textAlignment="textEnd"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.833" />
+
     <ImageButton
         android:id="@+id/btnHome"
         android:layout_width="49dp"
@@ -38,117 +82,116 @@
         app:layout_constraintVertical_bias="0.086" />
 
     <Button
-        android:id="@+id/addBtnS"
-        android:layout_width="156dp"
-        android:layout_height="63dp"
+        android:id="@+id/addScheduleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:backgroundTint="#3F51B5"
-        android:text="@string/addBt"
-        android:textSize="30sp"
+        android:text="Add"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.246"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.875" />
+        app:layout_constraintVertical_bias="0.976" />
 
     <TextView
         android:id="@+id/addTimeTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/addTimeTv"
+        android:text="Type:"
         android:textAlignment="textEnd"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintHorizontal_bias="0.283"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.541" />
+        app:layout_constraintVertical_bias="0.549" />
 
     <TextView
         android:id="@+id/addFNameTvS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/addFNameTv"
+        android:text="Schedule ID:"
         android:textAlignment="textEnd"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.255" />
+        app:layout_constraintVertical_bias="0.256" />
 
     <TextView
         android:id="@+id/addLNameTvS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/addLNameTv"
+        android:text="Name:"
         android:textAlignment="textEnd"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintHorizontal_bias="0.258"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.355" />
+        app:layout_constraintVertical_bias="0.361" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/addDateTv"
+        android:text="Phone #:"
         android:textAlignment="textEnd"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintHorizontal_bias="0.193"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.455" />
+        app:layout_constraintVertical_bias="0.449" />
 
     <TextView
         android:id="@+id/addNoteTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/addNoteTv"
+        android:text="Time:"
         android:textAlignment="textEnd"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.281"
+        app:layout_constraintHorizontal_bias="0.277"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.723" />
+        app:layout_constraintVertical_bias="0.733" />
 
     <TextView
         android:id="@+id/addPhoneTvS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/addPhoneTv"
+        android:text="Date:"
         android:textAlignment="textEnd"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintHorizontal_bias="0.289"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.634" />
+        app:layout_constraintVertical_bias="0.641" />
 
     <EditText
-        android:id="@+id/userAddFNameS"
+        android:id="@+id/SID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/userAddFName"
+        android:hint="@string/addSID"
         android:inputType="text"
-        android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -158,13 +201,12 @@
         app:layout_constraintVertical_bias="0.244" />
 
     <EditText
-        android:id="@+id/userAddNoteS"
+        android:id="@+id/addTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/userAddNote"
+        android:hint="00:00"
         android:inputType="text"
-        android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -174,13 +216,12 @@
         app:layout_constraintVertical_bias="0.728" />
 
     <EditText
-        android:id="@+id/userAddPhoneS"
+        android:id="@+id/addDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/userAddPhone"
+        android:hint="DD/MM/YYYY"
         android:inputType="text"
-        android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -190,13 +231,12 @@
         app:layout_constraintVertical_bias="0.635" />
 
     <EditText
-        android:id="@+id/userAddTimeS"
+        android:id="@+id/addType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/userAddTime"
+        android:hint="@string/s_type"
         android:inputType="text"
-        android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -206,13 +246,12 @@
         app:layout_constraintVertical_bias="0.542" />
 
     <EditText
-        android:id="@+id/userAddDateS"
+        android:id="@+id/addPNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/userAddRDate"
+        android:hint="@string/userAddPhone"
         android:inputType="text"
-        android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -222,13 +261,12 @@
         app:layout_constraintVertical_bias="0.456" />
 
     <EditText
-        android:id="@+id/userAddLNameS"
+        android:id="@+id/addFName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/userAddLName"
+        android:hint="@string/userAddFName"
         android:inputType="text"
-        android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

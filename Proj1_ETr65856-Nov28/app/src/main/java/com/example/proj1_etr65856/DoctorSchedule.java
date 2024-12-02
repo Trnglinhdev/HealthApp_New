@@ -1,7 +1,9 @@
 package com.example.proj1_etr65856;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
 import android.widget.CalendarView;
 import android.widget.TextView;
 
@@ -47,12 +49,8 @@ public class DoctorSchedule extends AppCompatActivity {
             throw new RuntimeException(e);
         }
 
-        //dbManager.insert("wer", "1421312389", "Dentist Appointment", "10:00","5/11/2024",  "Room 101");
-        //dbManager.insert("Jadon", "1234123213", "Physical Exam", "12:00", "4/12/2024", "Room 123");
-
-
         calendarView.setOnDateChangeListener((view, year, month, dayOfMonth) -> {
-            String selectedDate = dayOfMonth + "/" + (month + 1) + "/" + year;
+            String selectedDate = (month + 1)+ "/" + dayOfMonth+ "/" + year;
             selectedDateText.setText("Appointments for: " + selectedDate);
 
             // Fetch appointments from the database for the selected date
@@ -77,11 +75,15 @@ public class DoctorSchedule extends AppCompatActivity {
                 appointmentsAdapter.updateAppointments(Collections.singletonList("No appointments for this date."));
             }
         });
-
-
         // Set today's date as default
         calendarView.setDate(System.currentTimeMillis(), false, true);
+
+        Button arBtn = findViewById(R.id.addremoveBtn);
+        arBtn.setOnClickListener(v -> {
+            startActivity(new Intent(DoctorSchedule.this, AddSchedule.class));
+        });
     }
+
 }
 
 

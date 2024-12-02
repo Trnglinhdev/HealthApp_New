@@ -16,76 +16,61 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.sql.SQLDataException;
+
 public class AddSchedule extends AppCompatActivity {
 
-    private AddScheDB dbHandler;
+    private ScheduleDBManager dbManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_schedule);
 
+        dbManager = new ScheduleDBManager(this);
+        try {
+            dbManager.open();
+        } catch (SQLDataException e) {
+            throw new RuntimeException(e);
+        }
+
         //define each textview for user input
-        EditText userAddFName = findViewById(R.id.userAddFNameS);
-        EditText userAddLName = findViewById(R.id.userAddLNameS);
-        EditText userAddDate = findViewById(R.id.userAddDateS);
-        EditText userAddPhone = findViewById(R.id.userAddPhoneS);
-        EditText userAddTime = findViewById(R.id.userAddTimeS);
-        EditText userAddNote = findViewById(R.id.userAddNoteS);
+        EditText userAddSID = findViewById(R.id.SID);
+        EditText userAddFName = findViewById(R.id.addFName);
+        EditText userPNumber = findViewById(R.id.addPNumber);
+        EditText userType = findViewById(R.id.addType);
+        EditText userAddDate = findViewById(R.id.addDate);
+        EditText userAddTime = findViewById(R.id.addTime);
+        EditText userAddLocation = findViewById(R.id.addLocation);
 
         //disable soft keyboard
+        userAddSID.setShowSoftInputOnFocus(false);
         userAddFName.setShowSoftInputOnFocus(false);
-        userAddLName.setShowSoftInputOnFocus(false);
-        userAddPhone.setShowSoftInputOnFocus(false);
+        userPNumber.setShowSoftInputOnFocus(false);
+        userType.setShowSoftInputOnFocus(false);
         userAddDate.setShowSoftInputOnFocus(false);
         userAddTime.setShowSoftInputOnFocus(false);
-        userAddNote.setShowSoftInputOnFocus(false);
-
-        //dbHandler = new AddScheDB(AddSchedule.this);
-        SharedPreferences sharePref = PreferenceManager.getDefaultSharedPreferences(this);
+        userAddLocation.setShowSoftInputOnFocus(false);
 
         //set add button
-        Button addBt = findViewById(R.id.addBtnS);
-        addBt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        Button addBt = findViewById(R.id.addScheduleBtn);
+        addBt.setOnClickListener(v -> {
+            //dbManager.insert("Jadon", "1234123213", "Physical Exam", "12:00", "4/12/2024", "Room 123");
 
-                //get user input and put to String
-                String fName = userAddFName.getText().toString();
-                String lName = userAddLName.getText().toString();
-                String date = userAddDate.getText().toString();
-                String phoneNumber = userAddPhone.getText().toString();
-                String time = userAddTime.getText().toString();
-                String note = userAddNote.getText().toString();
+            dbManager.insert(userAddFName.getText().toString(),
+                    userPNumber.getText().toString(),
+                    userType.getText().toString(),
+                    userAddTime.getText().toString(),
+                    userAddDate.getText().toString(),
+                    userAddLocation.getText().toString());
 
-                //set mandatory fields
-                if(fName.isEmpty()||lName.isEmpty()||date.isEmpty()||phoneNumber.isEmpty()||time.isEmpty())
-                {
-                    Toast.makeText(AddSchedule.this,"Please enter required information with *",Toast.LENGTH_SHORT).show();
-                    return;
-                }
+            startActivity(new Intent(AddSchedule.this, DoctorSchedule.class));
+        });
 
-                //set after action that link user input to database and clear textview
-                //dbHandler.addNewAppt(fName,lName,date,phoneNumber,time,note);
-
-                SharedPreferences.Editor editor = sharePref.edit();
-                editor.putString("key1",fName);
-                editor.putString("key2",lName);
-                editor.putString("key3",date);
-                editor.putString("key4",phoneNumber);
-                editor.putString("key5",time);
-                editor.putString("key6",note);
-                editor.commit();
-
-
-                Toast.makeText(AddSchedule.this, "New Appointment has been added.",Toast.LENGTH_SHORT).show();
-                userAddFName.setText("");
-                userAddLName.setText("");
-                userAddDate.setText("");
-                userAddTime.setText("");
-                userAddPhone.setText("");
-                userAddNote.setText("");
-            }
+        Button removeBtn = findViewById(R.id.removeScheduleBtn);
+        removeBtn.setOnClickListener(v -> {
+            dbManager.delete(Long.parseLong(userAddSID.getText().toString()));
+            startActivity(new Intent(AddSchedule.this, DoctorSchedule.class));
         });
 
         //return home button
