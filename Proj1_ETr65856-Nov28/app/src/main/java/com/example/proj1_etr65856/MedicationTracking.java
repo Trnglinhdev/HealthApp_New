@@ -50,7 +50,6 @@ public class MedicationTracking extends AppCompatActivity {
         EditText date = findViewById(R.id.addDate);
         EditText duration = findViewById(R.id.addDuration);
 
-        //add medication
         Button addBtn = findViewById(R.id.logBt);
         addBtn.setOnClickListener(view -> {
             dbManager.insert(pName.getText().toString(),
@@ -60,15 +59,14 @@ public class MedicationTracking extends AppCompatActivity {
                     date.getText().toString(),
                     duration.getText().toString());
 
-            Intent intent1 = getIntent();  // Get the current intent
-            finish();  // Close the current activity
+            Intent intent1 = getIntent();
+            finish();
             startActivity(intent1);
             Intent intentadd = getIntent();
             finish();
             startActivity(intentadd);
         });
 
-        //Remove medication
         Button removeBtn = findViewById(R.id.med_removeBtn);
         removeBtn.setOnClickListener(v -> {
             if(medID.getText().toString().isEmpty()){
@@ -84,11 +82,9 @@ public class MedicationTracking extends AppCompatActivity {
             }
         });
 
-        //Home Button
         ImageButton btnHome = findViewById(R.id.btnHome);
         btnHome.setOnClickListener(view -> startActivity(new Intent(MedicationTracking.this, MainActivity2.class)));
 
-        //Med List
         listView = findViewById(R.id.listView);
         ArrayList<String> collection = new ArrayList<>();
         Cursor cursor = dbManager.fetch_med(fName, phone);

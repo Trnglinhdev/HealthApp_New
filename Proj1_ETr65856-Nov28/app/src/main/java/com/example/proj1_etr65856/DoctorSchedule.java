@@ -41,9 +41,7 @@ public class DoctorSchedule extends AppCompatActivity {
         appointmentsRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         appointmentsRecyclerView.setAdapter(appointmentsAdapter);
 
-        // Initialize the database manager
         dbManager = new ScheduleDBManager(this);
-        // Open database connection
         try {
             dbManager.open();
         } catch (SQLDataException e) {
@@ -53,8 +51,6 @@ public class DoctorSchedule extends AppCompatActivity {
         calendarView.setOnDateChangeListener((view, year, month, dayOfMonth) -> {
             String selectedDate = (month + 1)+ "/" + dayOfMonth+ "/" + year;
             selectedDateText.setText("Appointments for: " + selectedDate);
-
-            // Fetch appointments from the database for the selected date
             List<Appointment> appointments = dbManager.getAppointmentsForDate(selectedDate);
             Log.d("DoctorSchedule", "Selected Date: " + selectedDate);
             Log.d("DoctorSchedule", "Appointments Count: " + (appointments != null ? appointments.size() : 0));
@@ -72,11 +68,9 @@ public class DoctorSchedule extends AppCompatActivity {
                 }
                 appointmentsAdapter.updateAppointments(appointmentDetails);
             } else {
-                // If no appointments, display a message
                 appointmentsAdapter.updateAppointments(Collections.singletonList("No appointments for this date."));
             }
         });
-        // Set today's date as default
         calendarView.setDate(System.currentTimeMillis(), false, true);
 
         Button arBtn = findViewById(R.id.addremoveBtn);

@@ -25,8 +25,6 @@ public class ConsultationActivity extends AppCompatActivity {
     ListView listView;
     private ConsulDBManager dbManager;
 
-
-//    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,7 +67,6 @@ public class ConsultationActivity extends AppCompatActivity {
             startActivity(intentadd);
         });
 
-        //Remove consultation
         Button removeBtn = findViewById(R.id.col_removeBtn);
         removeBtn.setOnClickListener(v -> {
             if(colID.getText().toString().isEmpty()){
@@ -85,7 +82,6 @@ public class ConsultationActivity extends AppCompatActivity {
             }
         });
 
-        //Home Button
         ImageButton btnHome = findViewById(R.id.btnHome);
         btnHome.setOnClickListener(view -> startActivity(new Intent(ConsultationActivity.this, MainActivity2.class)));
 
@@ -108,8 +104,6 @@ public class ConsultationActivity extends AppCompatActivity {
         }
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, collection);
         listView.setAdapter(adapter);
-
-
     }
     @Override
     protected void onDestroy() {

@@ -23,7 +23,6 @@ public class ConsulDBManager {
         return this;
     }
 
-
     public void close(){
         dbConsul.close();
     }

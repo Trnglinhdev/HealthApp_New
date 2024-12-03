@@ -30,10 +30,8 @@ public class Jokes extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_jokes);
 
-        // Reference ImageView
         jokeImageView = findViewById(R.id.jokeImageView);
 
-        // Set up Home button to navigate back
         ImageButton btnHome = findViewById(R.id.btnHome);
         btnHome.setOnClickListener(view -> startActivity(new Intent(Jokes.this, MainActivity2.class)));
 
@@ -60,7 +58,6 @@ public class Jokes extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        // Stop the handler to prevent memory leaks
         if (handler != null && jokeRunnable != null) {
             handler.removeCallbacks(jokeRunnable);
         }

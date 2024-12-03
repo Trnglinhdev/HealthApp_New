@@ -27,30 +27,26 @@ public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.
 
     @Override
     public void onBindViewHolder(AppointmentViewHolder holder, int position) {
-        // Bind the appointment data to the view
         String appointmentDetails = appointments.get(position);
         holder.appointmentText.setText(appointmentDetails);
     }
 
     @Override
     public int getItemCount() {
-        return appointments.size(); // Return the size of the appointments list
+        return appointments.size();
     }
 
-    // Method to update the list of appointments
     public void updateAppointments(List<String> newAppointments) {
         this.appointments = newAppointments;
-        notifyDataSetChanged(); // Notify the adapter that the data has changed
+        notifyDataSetChanged();
     }
 
-    // ViewHolder class
     public static class AppointmentViewHolder extends RecyclerView.ViewHolder {
 
         TextView appointmentText;
 
         public AppointmentViewHolder(View itemView) {
             super(itemView);
-            // Initialize the TextView
             appointmentText = itemView.findViewById(R.id.appointmentText);
         }
     }

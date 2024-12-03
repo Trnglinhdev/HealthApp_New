@@ -39,7 +39,6 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main2);
-        //reference buttons
         Button addPatient = (Button) findViewById(R.id.btAdd);
         Button viewSchedule = (Button) findViewById(R.id.btSchedule);
         Button weightCalc = (Button) findViewById(R.id.btWeight);
@@ -118,7 +117,6 @@ public class MainActivity2 extends AppCompatActivity {
                 String email = cursor.getString(cursor.getColumnIndexOrThrow(DBPatient.EMAIL));
                 String econtact = cursor.getString(cursor.getColumnIndexOrThrow(DBPatient.E_CONTACT));
 
-//                patientList.add(new Patient(fName, lName, phone));
                 patientList.add(new Patient(fName, lName, dob, gender,phone, email, econtact));
 
             } while (cursor.moveToNext());

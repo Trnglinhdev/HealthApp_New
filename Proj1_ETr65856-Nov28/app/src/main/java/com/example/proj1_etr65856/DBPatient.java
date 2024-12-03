@@ -34,7 +34,6 @@ public class DBPatient extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        // Log the CREATE TABLE query
         Log.d("CREATE_TAG", "Creating table with query: " + CREATE_DB_QUERY);
         db.execSQL(CREATE_DB_QUERY);
     }
@@ -43,6 +42,6 @@ public class DBPatient extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_TABLE);
-        onCreate(db); // Recreate the table
+        onCreate(db);
     }
 }
